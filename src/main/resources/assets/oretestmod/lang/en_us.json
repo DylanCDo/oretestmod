@@ -1,0 +1,13 @@
+{
+  "itemGroup.oretestmod": "Example Mod Tab",
+  "block.oretestmod.example_block": "Example Block",
+  "item.oretestmod.example_item": "Example Item",
+
+  "oretestmod.configuration.title": "Ore Test Mod Configs",
+  "oretestmod.configuration.section.oretestmod.common.toml": "Ore Test Mod Configs",
+  "oretestmod.configuration.section.oretestmod.common.toml.title": "Ore Test Mod Configs",
+  "oretestmod.configuration.items": "Item List",
+  "oretestmod.configuration.logDirtBlock": "Log Dirt Block",
+  "oretestmod.configuration.magicNumberIntroduction": "Magic Number Text",
+  "oretestmod.configuration.magicNumber": "Magic Number"
+}
