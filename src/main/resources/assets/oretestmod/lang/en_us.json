@@ -1,3 +1,5 @@
 {
-  "item.oretestmod.bismuth": "Bismuth"
+  "item.oretestmod.bismuth": "Bismuth",
+  "item.oretestmod.raw_bismuth": "Raw Bismuth",
+  "creativetab.oretestmod.bismuth_items": "Bismuth Items"
 }
