@@ -9,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.soybeans.oretestmod.OreTestMod;
+import net.soybeans.oretestmod.block.ModBlocks;
 import net.soybeans.oretestmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -29,6 +30,20 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BISMUTH);
                         output.accept(ModItems.RAW_BISMUTH);
+                    })
+                    .build()
+
+    );
+
+    public static final Supplier<CreativeModeTab> BISMUTH_BLOCKS = CREATIVE_MOD_TABS.register("bismuth_block_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK.get()))
+
+                    .title(Component.translatable("creativetab.oretestmod.bismuth_blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.BISMUTH_BLOCK);
+                        output.accept(ModBlocks.BISMUTH_ORE);
+                        output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+
                     })
                     .build()
 

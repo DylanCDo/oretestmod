@@ -1,5 +1,12 @@
 {
   "item.oretestmod.bismuth": "Bismuth",
   "item.oretestmod.raw_bismuth": "Raw Bismuth",
-  "creativetab.oretestmod.bismuth_items": "Bismuth Items"
+
+  "block.oretestmod.bismuth_block": "Block of Bismuth",
+  "block.oretestmod.bismuth_ore": "Bismuth Ore",
+  "block.oretestmod.bismuth_deepslate_ore": "Bismuth Deeplslate Ore",
+
+  "creativetab.oretestmod.bismuth_items": "Bismuth Items",
+  "creativetab.oretestmod.bismuth_blocks": "Bismuth Blocks"
+
 }

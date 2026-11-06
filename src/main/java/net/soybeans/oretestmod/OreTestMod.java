@@ -1,7 +1,10 @@
 package net.soybeans.oretestmod;
 
+import net.minecraft.resources.ResourceKey;
 import net.soybeans.oretestmod.creativemodtab.ModCreativeModeTabs;
 import net.soybeans.oretestmod.item.ModItems;
+import net.soybeans.oretestmod.block.ModBlocks;
+
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -56,6 +59,8 @@ public class OreTestMod {
 
         ModItems.register(modEventBus);
 
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -73,6 +78,12 @@ public class OreTestMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BISMUTH.get());
             event.accept(ModItems.RAW_BISMUTH.get());
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BISMUTH_BLOCK.get());
+            event.accept(ModBlocks.BISMUTH_ORE.get());
+            event.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE.get());
         }
     }
 
